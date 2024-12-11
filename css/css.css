@@ -1,0 +1,73 @@
+#wrapper {
+    display: grid;
+    
+    
+    grid-template-rows: 100px 100px 400px 100px 400px 100px;
+    grid-template-columns: 10% 1fr 10%;
+    grid-template-areas:
+    ' nav nav nav '
+    ' . hd . '
+    ' . sc1 as1 '
+    ' bd bd bd '
+    ' . sc2 as2 '
+    ' ft ft ft '
+    ;
+    gap: 20px;
+}
+nav {
+    grid-area:nav;
+    background-color: #70e19f;
+}
+header {
+    grid-area:hd;
+    color:rgb(40, 91, 62);
+    font-size:5rem;
+    text-align: center;
+    align-content: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 750;
+
+}
+aside1 {
+    grid-area:as1;
+}
+aside2 {
+    grid-area:as2;
+}
+#section1 {
+    grid-area:sc1;
+    background-color:white;
+    color:black;
+    font-size:2.3rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 750;
+}
+#sc1txt {
+    color:rgb(112, 112, 112);
+    font-size: 1.3rem;
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight:400;
+}
+#border {
+    grid-area:bd;
+    background-color: #2ecc71;
+}
+#section2 {
+    grid-area:sc2;
+    background-color:white;
+    color:black;
+    font-size:2.3rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 750;
+    padding:30px;
+}
+#sc2txt {
+    color:rgb(112, 112, 112);
+    font-size: 1.3rem;
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight:400;
+}
+footer {
+    grid-area:ft;
+    background-color: #2b9e62;
+}
