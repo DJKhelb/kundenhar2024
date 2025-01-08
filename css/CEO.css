@@ -1,0 +1,55 @@
+#wrapper {
+    display:grid;
+
+    grid-template-rows: 100px 1fr 400px 1fr;
+    grid-template-columns: 1fr 800px 1fr;
+    grid-template-areas:
+    'nav nav nav'
+    'spaceup spaceup spaceup'
+    'spaceleft section spaceright'
+    'spacedown spacedown spacedown'
+    ;
+    height:1000px;
+    width:1200px;
+}
+nav {
+    grid-area:nav;
+    background-color: #70e19f;
+    display:flex;
+}
+nav a{
+    display:flex;
+    flex:1;
+    justify-content: center;
+    align-items: center;
+    color:black;
+    text-decoration: none;
+}
+nav a:hover {
+    background-color: black;
+    color:#99d8b3;
+    text-decoration: none;
+}
+#Emil {
+    color:white;
+}
+
+section {
+    grid-area:section;
+    background-color: black;
+    display:flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+spaceup {
+    grid-area: spaceup;
+}
+spaceleft {
+    grid-area: spaceleft;
+}
+spaceright {
+    grid-area: spaceright;
+}
+spacedown {
+    grid-area: spacedown;
+}

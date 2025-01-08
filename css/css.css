@@ -2,7 +2,7 @@
     display: grid;
     
     
-    grid-template-rows: 100px 100px 400px 100px 400px 100px;
+    grid-template-rows: 100px 100px 400px 30px 400px 70px;
     grid-template-columns: 10% 1fr 10%;
     grid-template-areas:
     ' nav nav nav '
@@ -17,6 +17,20 @@
 nav {
     grid-area:nav;
     background-color: #70e19f;
+    display:flex;
+}
+nav a{
+    display:flex;
+    flex:1;
+    justify-content: center;
+    align-items: center;
+    color:black;
+    text-decoration: none;
+}
+nav a:hover {
+    background-color: black;
+    color:#99d8b3;
+    text-decoration: none;
 }
 header {
     grid-area:hd;
@@ -43,7 +57,7 @@ aside2 {
     font-weight: 750;
 }
 #sc1txt {
-    color:rgb(112, 112, 112);
+    color:rgb(68, 68, 68);
     font-size: 1.3rem;
     font-family:Arial, Helvetica, sans-serif;
     font-weight:400;
@@ -62,7 +76,7 @@ aside2 {
     padding:30px;
 }
 #sc2txt {
-    color:rgb(112, 112, 112);
+    color:rgb(68, 68, 68);
     font-size: 1.3rem;
     font-family:Arial, Helvetica, sans-serif;
     font-weight:400;
